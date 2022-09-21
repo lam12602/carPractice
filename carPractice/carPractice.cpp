@@ -19,18 +19,18 @@ int main()
     car1.make = "big";
     car1.model = "one";
     car1.doors = 2;
-    car1.mileage = 60.0f;
+    car1.mileage = 600000.0f;
     car1.MPG = 20.0f;
-    car1.petrol = 10.0f;
+    car1.petrol = 100.0f;
 
     Car car2;
 
     car2.make = "small";
     car2.model = "two";
     car2.doors = 4;
-    car2.mileage = 80.0f;
+    car2.mileage = 800000.0f;
     car2.MPG = 15.0f;
-    car2.petrol = 4.0f;
+    car2.petrol = 400.0f;
 
     CarValues(car1);
     CarValues(car2);
