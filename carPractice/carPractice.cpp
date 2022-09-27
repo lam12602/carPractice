@@ -32,8 +32,13 @@ int main()
     car2.MPG = 15.0f;
     car2.petrol = 400.0f;
 
-    CarValues(car1);
-    CarValues(car2);
+    //CarValues(car1);
+    //CarValues(car2);
+    car1.carStats();
+    car2.carStats();
+    car1.drive();
+    car2.drive();
+    car1.drive();
 }
 
 
