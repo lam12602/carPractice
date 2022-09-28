@@ -25,6 +25,13 @@ Car::Car(std::string newmake, std::string newModel, int newDoors, float newMilea
 	std::cout << "car with parameters\n";
 }
 
+Car::~Car()
+{
+	std::cout << "Car " << model << " was destoryed\n";
+}
+
+ 
+
 void Car::carStats()
 {
 	std::cout << "the car make is " << make << " the model is " << model << "\n There are " << doors << " doors the mileage is " << mileage << " with a MPG of " << MPG << " and currently has a petrol of " << petrol << ".\n";

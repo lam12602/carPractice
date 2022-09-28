@@ -6,6 +6,9 @@ public:
 
 		Car();
 		Car(std::string newmake,std::string newModel, int newDoors, float newMileage, float newMPG, float newPetrol  );
+		
+		~Car();
+
 		void carStats();
 		void drive();
 
