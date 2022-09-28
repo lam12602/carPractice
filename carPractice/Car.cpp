@@ -1,6 +1,30 @@
 #include "Car.h"
 #include <iostream>
 
+Car::Car()
+	:make("")
+	, model("")
+	, doors(0)
+	, mileage(0)
+	, MPG(0)
+	,petrol(0)
+	,milesDriven(0)
+	,fuleUsed(0)
+{
+	std::cout << "Car made\n";
+}
+
+Car::Car(std::string newmake, std::string newModel, int newDoors, float newMileage, float newMPG, float newPetrol)
+	:make(newmake)
+	, model(newModel)
+	, doors(newDoors)
+	, mileage(newMileage)
+	, MPG(newMPG)
+	, petrol(newPetrol)
+{
+	std::cout << "car with parameters\n";
+}
+
 void Car::carStats()
 {
 	std::cout << "the car make is " << make << " the model is " << model << "\n There are " << doors << " doors the mileage is " << mileage << " with a MPG of " << MPG << " and currently has a petrol of " << petrol << ".\n";

@@ -4,6 +4,8 @@ class Car
 {
 public:
 
+		Car();
+		Car(std::string newmake,std::string newModel, int newDoors, float newMileage, float newMPG, float newPetrol  );
 		void carStats();
 		void drive();
 
