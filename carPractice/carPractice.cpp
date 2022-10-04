@@ -4,6 +4,7 @@
 #include <iostream>
 #include <string>
 #include "Car.h"
+#include <vector>
 
 void CarValues(Car stats)
 {
@@ -36,16 +37,27 @@ int main()
 
     Car car4("some", "thing", 3, 700000, 20, 450);
 
+    std::vector<Car> carVector;
+    carVector.push_back(car1);
+    carVector.push_back(car2);
+    carVector.push_back(car3);
+    carVector.push_back(car4);
+
+    for (int i = 0; i < carVector.size(); ++i)
+    {
+        carVector[i].carStats();
+    }
+
     //CarValues(car1);
     //CarValues(car2);
-    car1.carStats();
-    car2.carStats();
-    car4.carStats();
-    car1.drive();
-    car2.drive();
-    car1.drive();
-    car3.carStats();
-    car3.drive();
+    //car1.carStats();
+    //car2.carStats();
+    //car4.carStats();
+    //car1.drive();
+    //car2.drive();
+    //car1.drive();
+    //car3.carStats();
+    //car3.drive();
 
 }
 
