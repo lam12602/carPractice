@@ -5,6 +5,7 @@
 #include <string>
 #include "Car.h"
 #include <vector>
+#include<map>
 
 void CarValues(Car stats)
 {
@@ -23,6 +24,9 @@ int main()
     car1.mileage = 600000.0f;
     car1.MPG = 20.0f;
     car1.petrol = 100.0f;
+    car1.serialNumber = 32;
+    car1.parked = false;
+
 
     Car car2;
 
@@ -32,11 +36,26 @@ int main()
     car2.mileage = 800000.0f;
     car2.MPG = 15.0f;
     car2.petrol = 400.0f;
+    car2.serialNumber = 56;
+    car2.parked = true;
 
     Car car3;
 
     Car car4("some", "thing", 3, 700000, 20, 450);
 
+    std::map<int, Car> CarMap;
+
+    CarMap[32] = car1;
+    CarMap[56] = car2;
+    
+    /*std::cout << "What serial number" << std::endl;
+
+    int getS;
+    std::cin >> getS;
+
+    std::cout << std::endl;
+    std::cout << Car.serialGet(getS) << std::endl;
+    */
     std::vector<Car> carVector;
     carVector.push_back(car1);
     carVector.push_back(car2);
@@ -47,6 +66,8 @@ int main()
     {
         carVector[i].carStats();
     }
+
+    
 
     //CarValues(car1);
     //CarValues(car2);

@@ -10,6 +10,8 @@ Car::Car()
 	,petrol(0)
 	,milesDriven(0)
 	,fuleUsed(0)
+	,parked(false)
+	,carMap()
 {
 	std::cout << "Car made\n";
 }
@@ -30,6 +32,11 @@ Car::~Car()
 	std::cout << "Car " << model << " was destoryed\n";
 }
 
+/*int Car::serialGet(int getS)
+{
+	return carMap[getS] ;
+}
+*/
  
 
 void Car::carStats()

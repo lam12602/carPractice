@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include <map>
 class Car
 {
 public:
@@ -9,8 +10,11 @@ public:
 		
 		~Car();
 
+//int serialGet(int getS);
+
 		void carStats();
 		void drive();
+
 
 		std::string make;
 		std::string model;
@@ -20,6 +24,9 @@ public:
 		float petrol;
 		float milesDriven;
 		float fuleUsed;
+		int serialNumber;
+		bool parked;
+		std::map<int, Car> carMap;
 
 	
 
