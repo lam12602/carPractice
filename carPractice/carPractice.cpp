@@ -12,9 +12,27 @@ void CarValues(Car stats)
     std::cout << "the car make is " << stats.make << " the model is " << stats.model << "\n There are " << stats.doors << " doors the mileage is " << stats.mileage << " with a MPG of " << stats.MPG << " and currently has a petrol of " << stats.petrol << ".\n";
 }
 
+void work(int& x)
+{
+    x++;
+}
+void swap(int& x, int& y)
+{
+    int temp = x;
+    x = y;
+    y = temp;
+}
+
 int main()
 {
-    std::cout << "Hello World!\n";
+    int a = 5;
+    int& b = a;
+    int c = 10;
+    std::cout << "a = " << a << " and b = " << b << " and c is " << c << "\n";
+    work(a);
+    std::cout << "a is now " << a << "\n";
+    swap(a, c);
+    std::cout << "a is now " << a <<  " and c is now " << c << "\n";
 
     Car car1;
 
